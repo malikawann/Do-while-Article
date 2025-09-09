@@ -1,0 +1,35 @@
+Understanding the do...while Loop in JavaScript 
+
+When writing programs, there are many situations where we need to repeat a block of code until a certain condition is met. For example, imagine asking a user to enter a country name. If they type "India," we want to keep asking until they type something else. This is where the do...while loop in JavaScript comes in handy.
+
+What is a do...while loop?
+
+The do...while loop is a special type of loop that ensures a block of code runs at least once before checking any condition. Unlike the regular while loop, which checks the condition first, the do...while loop executes the code once and then evaluates the condition. If the condition is true, it runs again; if not, the loop stops.
+
+Why use do...while?
+
+Sometimes we want to guarantee that the user or system performs an action at least once. For example, prompting a user for input should happen once no matter what. The do...while loop is perfect for such cases.
+
+Example: Asking for a country name
+
+Here’s a small program to illustrate:
+
+let country;
+
+do {
+  country = prompt("Enter a country name (not India):");
+} while (country.toLowerCase() === "india");
+
+alert("You entered: " + country);
+
+Explanation of the code:
+
+The program first asks the user to enter a country name.
+
+If the user types "India," the loop will repeat, and the prompt will appear again.
+
+Once the user types any country other than "India," the loop stops, and the entered country is shown in an alert.
+
+Key Takeaway
+
+The do...while loop is useful when you want your code to run at least once before any condition is checked. It’s especially handy in situations involving user input, menu-driven programs, or repeated tasks where at least one execution is required.
